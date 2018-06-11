@@ -5,6 +5,18 @@ import java.util.Random;
 public class SortUtils {
 	
 	/**
+	 * 交换元素
+	 * @param arr
+	 * @param left
+	 * @param right
+	 */
+	public static void ElementSwap(int[] arr, int left, int right) {
+		int temp = arr[left];
+		arr[left] = arr[right];
+		arr[right] = temp;
+	}
+	
+	/**
 	 * 使用找数组前中后三个位置上的中位数方式来获取主元pivot
 	 * @param arr
 	 * @param left
